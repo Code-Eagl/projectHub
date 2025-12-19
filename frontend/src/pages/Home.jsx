@@ -11,7 +11,7 @@ export default function Home() {
     if (!text.trim()) return;
 
     setLoading(true);
-    const res = await fetch(`${API_URL}/predict`, {
+    const res = await fetch(`https://projecthub-kf51.onrender.com/predict`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),
